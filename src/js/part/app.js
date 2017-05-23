@@ -60,6 +60,15 @@ $(document).ready(function() {
         }
     });
 
+
+    // подстановка значения по умолчанию
+    $('.select').each(function() {
+        var val = $(this).find('.select-default').text();
+        $(this).find('.select-default').addClass('selected');
+        console.log(val);
+        $(this).find('input').val(val);
+    })
+
     $('body').click(function() {
         $('.select-list').slideUp(200);
         $('.select').removeClass('j-open');
@@ -71,6 +80,8 @@ $(document).ready(function() {
         $('.select').removeClass('j-open');
         $(this).parents('.select').find('input').val(val);
         $(this).parents('.select').find('.select-list').slideUp(200);
+        $(this).parents('.select-list').find('.select-list__one').removeClass('selected');
+        $(this).addClass('selected');
     });
 
     /*календарь*/
@@ -98,33 +109,6 @@ $(document).ready(function() {
     $.datepicker.setDefaults($.datepicker.regional['ru']);
 
     
-    var preloadImages = function () {
-        for(var i = 0; i<arguments.length; i++)
-        $("<img />").attr("src", arguments[i]);
-    }
-
-    preloadImages("");
-
-    $("#order-form").validate({
-       rules:{
-            name:{
-                required: true
-            },
-            email:{
-                required: true,
-                email:  true,
-            },
-       },
-
-       messages:{
-            login:{
-                required: "This field is required",
-            },
-            email:{
-                required: "This field is required",
-                email: "Wrong email adres",
-            }
-       }
-    });  
+    
 
 });
