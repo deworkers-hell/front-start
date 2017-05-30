@@ -21,10 +21,22 @@ bower install<br>
 
 <h2>Готовые модули</h2>
 
-<p><b>modal</b> - для открытия модалки нужна ссылка вида <p><code><a href="#name"></a></code></p> и класс "open_modal". Будет открыта модалка с id="name" в обертке "#overlay"</p>
+<p><b>modal</b> - для открытия модалки нужна ссылка вида 
+
+<p>
+<code>
+```
+<a href="#name"></a></code>
+```
+</p> 
+и класс "open_modal". Будет открыта модалка с id="name" в обертке "#overlay"</p>
 <p><b>select</b> - заменяет стандартный селект. Для этого используем шаблон из components/select.html<br>
 Классы: .select-default - пункт выбранный по умолчанию; .selected - текущий выбранный пункт</p>
-<p><b>scrollto</b> - весим на элементы <p><code><a href="#element" class=".j-scroll-to"></a></code></p> и плавно скролим до элемента c id="element"</p>
+<p><b>scrollto</b> - весим на элементы <p><code>
+```
+<a href="#element" class=".j-scroll-to"></a>
+```
+</code></p> и плавно скролим до элемента c id="element"</p>
 
 <h3>Сторонние плагины лежат в папке /src/plugin и при неободимости инклудтся в файлах main.js и main.less</h3>
 <ul>
