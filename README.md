@@ -1,27 +1,35 @@
-Для начала работы нужно установить npm и bower компоненты. Для этого ввести в командную строку с корне проекта:
-npm install
-bower install
+<p>Для начала работы нужно установить npm и bower компоненты. Для этого ввести в командную строку с корне проекта:<br>
+npm install<br>
+bower install<br>
+</p>
+<h2>Команды:</h2>
 
-Команды:
-
-gulp - запускает основной задачи на сборку проекта, сервер и отслеживение изменения файлов в директории /src/
+<p><b>gulp</b> - запускает основной задачи на сборку проекта, сервер и отслеживение изменения файлов в директории /src/
     включает в себя:
-    gulp build - сборка проекта
-    gulp webserver - запуск сервера на основе файлов в директории /build/
-    gulp watch - задача на отслеживение изменения файлов в директории /src/
+    <ul>
+        <li>gulp build - сборка проекта</li>
+        <li>gulp webserver - запуск сервера на основе файлов в директории /build/</li>
+        <li>gulp watch - задача на отслеживение изменения файлов в директории /src/</li>
+    </ul>
+</p>    
+<p>
+<b>gulp clean</b> - чистка папка build
+</p>
+<p>
+<b>gulp sprite</b> - сборка спрайтов (можно запускать параллельно работе основной задачи)
+</p>
 
-gulp clean - чистка папка build
+<h2>Готовые модули</h2>
 
-gulp sprite - сборка спрайтов (можно запускать параллельно работе основной задачи)
+<p><b>modal</b> - для открытия модалки нужна ссылка вида <code><a href="#name"></a></code> и класс "open_modal". Будет открыта модалка с id="name" в обертке "#overlay"</p>
+<p><b>select</b> - заменяет стандартный селект. Для этого используем шаблон из components/select.html<br>
+Классы: .select-default - пункт выбранный по умолчанию; .selected - текущий выбранный пункт</p>
+<p><b>scrollto</b> - весим на элементы <code><a href="#element" class=".j-scroll-to"></a></code> и плавно скролим до элемента c id="element"</p>
 
-modal - для открытия модалки нужна ссылка вида <code><a href="#name"></a></code> и класс "open_modal". Будет открыта модалка с id="name" в обертке "#overlay"
-select - заменяет стандартный селект. Для этого используем шаблон из components/select.html
-Классы: .select-default - пункт выбранный по умолчанию; .selected - текущий выбранный пункт
-scrollto - весим на элементы <code><a href="#element" class=".j-scroll-to"></a></code> и плавно скролим до элемента c id="element"
-
-Сторонние плагины лежат в папке /src/plugin и при неободимости инклудтся в файлах main.js и main.less
+<h3>Сторонние плагины лежат в папке /src/plugin и при неободимости инклудтся в файлах main.js и main.less</h3>
 <ul>
     <li>owl.carousel - <a href="https://owlcarousel2.github.io/OwlCarousel2/docs/started-welcome.html">Документация</a></li>
     <li>jquery.cycle - <a href="http://jquery.malsup.com/cycle/options.html">Документация</a></li>
+    <li>jquery.hyphen - <a href="https://github.com/kozachenko/jQuery-Russian-Hyphenation">Плагин jQuery для расстановки переносов в русском тексте</a></li>
 </ul>
 
