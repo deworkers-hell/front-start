@@ -12,6 +12,8 @@ var gulp = require('gulp'),
     spritesmith = require('gulp.spritesmith'),
     pngquant = require('imagemin-pngquant'),
     rimraf = require('rimraf'),
+    GulpSSH = require('gulp-ssh'),
+    fs = require('fs'),
     browserSync = require("browser-sync"),
     reload = browserSync.reload;
 
@@ -193,3 +195,23 @@ gulp.task('default', ['build', 'webserver', 'watch']);
 gulp.task('sprite', [
     'sprite:build'
 ]);
+
+
+
+var config = { // данные для доступа к ssh
+  host: '192.162.1.1',
+  port: 22,
+  username: 'username',
+  password: 'password' 
+}
+
+var gulpSSH = new GulpSSH({
+  ignoreErrors: false,
+  sshConfig: config
+})
+
+gulp.task('dest', function () {
+  return gulp
+    .src('build/**/*')
+    .pipe(gulpSSH.dest('/')) // директория на сервере от корня
+});
