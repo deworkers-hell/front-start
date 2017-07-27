@@ -37,11 +37,12 @@ bower install<br>
 </code></p> 
 и плавно скролим до элемента c id="element"</p>
 
-<h3>Сторонние плагины лежат в папке /src/plugin и при неободимости инклудтся в файлах main.js и main.less</h3>
+<h3>Сторонние плагины лежат в папке /src/plugin и при неободимости инклудятся в файлах lib.js и main.less</h3>
 <ul>
     <li>owl.carousel - <a href="https://owlcarousel2.github.io/OwlCarousel2/docs/started-welcome.html">Документация</a></li>
     <li>jquery.cycle - <a href="http://jquery.malsup.com/cycle/options.html">Документация</a></li>
     <li>jquery.hyphen - <a href="https://github.com/kozachenko/jQuery-Russian-Hyphenation">Плагин jQuery для расстановки переносов в русском тексте</a></li>
     <li>Swiper - <a href="http://idangero.us/swiper/">Документация</a></li>
+    <li>Magnific Popup</li> - <a href="http://dimsemenov.com/plugins/magnific-popup/">Документация</a>
 </ul>
 
