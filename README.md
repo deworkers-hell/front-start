@@ -26,7 +26,7 @@ bower install<br>
 
 <p>
 <code>
-`<a href="#name" class="open-modal"></a>`
+<a href="#name" class="open-modal"></a>
 </code>
 </p> 
 и класс "open_modal". Будет открыта модалка с id="name" в обертке "#overlay"</p>
@@ -34,7 +34,7 @@ bower install<br>
 Классы: .select-default - пункт выбранный по умолчанию; .selected - текущий выбранный пункт</p>
 <p><b>scrollto</b> - весим на элементы 
 <p><code>
-`<a href="#element" class=".j-scroll-to"></a>`
+<a href="#element" class=".j-scroll-to"></a>
 </code></p> 
 и плавно скролим до элемента c id="element"</p>
 
