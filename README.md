@@ -26,7 +26,8 @@ bower install<br>
 
 <p>
 <code>
-<a href="#name"></a></code>
+<a href="#name" class="open-modal"></a>
+</code>
 </p> 
 и класс "open_modal". Будет открыта модалка с id="name" в обертке "#overlay"</p>
 <p><b>select</b> - заменяет стандартный селект. Для этого используем шаблон из components/select.html<br>

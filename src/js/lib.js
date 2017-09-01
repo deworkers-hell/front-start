@@ -1,8 +1,8 @@
 /*
  * Third party
  */
-//= ../../bower_components/jquery/dist/jquery.js
 
+//= ../../bower_components/jquery/dist/jquery.js
 
 //= ../plugin/swiper/js/swiper.jquery.min.js
 //= ../plugin/jquery.validate.min.js

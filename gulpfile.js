@@ -1,21 +1,21 @@
 'use strict';
 
-var gulp = require('gulp'),
-    watch = require('gulp-watch'),
-    prefixer = require('gulp-autoprefixer'),
-    less = require('gulp-less'),
-    uglify = require('gulp-uglify'),
-    sourcemaps = require('gulp-sourcemaps'),
-    rigger = require('gulp-rigger'),
-    cssmin = require('gulp-clean-css'),
-    imagemin = require('gulp-imagemin'),
-    spritesmith = require('gulp.spritesmith'),
-    rename = require('gulp-rename'),
-    pngquant = require('imagemin-pngquant'),
-    rimraf = require('rimraf'),
-    GulpSSH = require('gulp-ssh'),
+var gulp = require('gulp'),//
+    watch = require('gulp-watch'),//
+    prefixer = require('gulp-autoprefixer'),//
+    less = require('gulp-less'),//
+    uglify = require('gulp-uglify'),//
+    sourcemaps = require('gulp-sourcemaps'),//
+    rigger = require('gulp-rigger'),//
+    cssmin = require('gulp-clean-css'),//
+    imagemin = require('gulp-imagemin'),//
+    spritesmith = require('gulp.spritesmith'),//
+    rename = require('gulp-rename'),//
+    pngquant = require('imagemin-pngquant'),//
+    rimraf = require('rimraf'),//
+    GulpSSH = require('gulp-ssh'),//
     fs = require('fs'),
-    browserSync = require("browser-sync"),
+    browserSync = require("browser-sync"),//
     reload = browserSync.reload;
 
 var path = {
@@ -32,7 +32,7 @@ var path = {
     src: { //Пути откуда брать исходники
         html:   'src/*.html', //Синтаксис src/*.html говорит gulp что мы хотим взять все файлы с расширением .html
         ajax:   'src/ajax/*.php',
-        js:     'src/js/main.js',//В стилях и скриптах нам понадобятся только main файлы
+        js:     'src/js/*.js',//В стилях и скриптах нам понадобятся только main файлы
         style:  'src/style/**/*.less',
         img:    'src/img/*.*', //Синтаксис img/**/*.* означает - взять все файлы всех расширений из папки и из вложенных каталогов
         tmp:    'src/tmp/**/*.*',
